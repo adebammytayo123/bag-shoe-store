@@ -19,7 +19,14 @@ const CartTotals = (props) => {
                     <div className="col-10 mt-4 mx-auto col-sm-8 text-capitalize text-center">
                         <div className=" col-10 mx-auto px-5 justify-content align-items-center">
                         <Link to="/">
-                                <ButtonContainer>back to store</ButtonContainer>
+                                <ButtonContainer>
+                                    <span className="pr-2">
+                                        <i className="fas fa-chevron-left"></i>
+                                        <i className="fas fa-chevron-left"></i>
+                                        <i className="fas fa-chevron-left"></i>  
+                                    </span>
+                                       store
+                                </ButtonContainer>
                             </Link>
                             <h5 className="mt-3">
                             <span className="text-title">total :</span>
