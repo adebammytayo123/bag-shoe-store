@@ -7,7 +7,8 @@ import CartList from './CartList';
 import CartTotals from './CartTotals';
 
 
-const Cart = () => {
+
+const Cart = (props) => {
 
     const { value } = useContext(ProductContext);
 
@@ -22,7 +23,8 @@ const Cart = () => {
                     <Title name="your" title="cart" />
                     <CartColumns />
                     <CartList value={value} />
-                    <CartTotals value={value} />
+                    <CartTotals value={value}
+                        history={props.history} />
                 </React.Fragment>) :
                 <EmptyCart />} 
         </section>

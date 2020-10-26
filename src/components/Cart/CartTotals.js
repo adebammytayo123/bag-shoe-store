@@ -2,9 +2,12 @@ import React, { useContext } from 'react';
 import { ProductContext } from '../../context';
 import { Link } from 'react-router-dom';
 import { ButtonContainer } from '../Button';
+import PayPalButton from './PayPalButton';
 
 
-const CartTotals = () => {
+const CartTotals = (props) => {
+
+    const { history } = props;
 
     const { value5 } = useContext(ProductContext);
     const [subTotal] = value5;
@@ -23,6 +26,10 @@ const CartTotals = () => {
                             <strong>$ {subTotal}</strong>
                         </h5>
                         </div>
+                        <PayPalButton
+                            total = {subTotal}
+                            history = {history}
+                        />
                        
                     </div>
                 </div>
