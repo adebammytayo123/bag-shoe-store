@@ -12,8 +12,8 @@ const Cart = () => {
     const { value } = useContext(ProductContext);
 
 
-    const { value12 } = useContext(ProductContext);
-    const [cart] = value12;
+    const { value9 } = useContext(ProductContext);
+    const [cart] = value9;
     console.log(cart)
     return (
         <section>

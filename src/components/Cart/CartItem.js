@@ -3,18 +3,16 @@ import { ProductContext } from '../../context';
 
 const CartItem = (props) => {
     const { id, title, img, price, total, count } = props.item;
-
-    // const { value } = useContext(ProductContext);
     
 
+    const { value6 } = useContext(ProductContext);
+    const [increment] = value6;
+
+    const { value7 } = useContext(ProductContext);
+    const [decrement] = value7;
+
     const { value8 } = useContext(ProductContext);
-    const [increment] = value8;
-
-    const { value9 } = useContext(ProductContext);
-    const [decrement] = value9;
-
-    const { value10 } = useContext(ProductContext);
-    const [removeItem] = value10;
+    const [removeItem] = value8;
 
     return (
         <div className="row mt-2 text-capitalize text-center">

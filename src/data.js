@@ -15,7 +15,7 @@ export const storeProducts = [
   },
   {
     id: 2,
-    title: "Ash-Bag",
+    title: "Ash-Shoe",
     img: "img/product2.jpg",
     price: 79.54,
     company: "VOGUS TOPUS",
@@ -27,10 +27,10 @@ export const storeProducts = [
   },
   {
     id: 3,
-    title: "Small-Pink",
+    title: "Dark Blue",
     img: "img/product3.jpg",
-    price: 24.38,
-    company: "PLEXSHA LADIES BAG",
+    price: 14.38,
+    company: "JUMIA",
     info:
       "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
     inCart: false,
@@ -53,7 +53,7 @@ export const storeProducts = [
     id: 5,
     title: "Mid-Red Bag",
     img: "img/product5.jpg",
-    price: 24,
+    price: 24.00,
     company: "THE WOMEN'S HANDBAGS",
     info:
       "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
@@ -63,10 +63,10 @@ export const storeProducts = [
   },
   {
     id: 6,
-    title: "Gold Clear",
+    title: "Silver Clear",
     img: "img/product6.jpg",
-    price: 74.99,
-    company: "FSJ SHOES",
+    price: 48.00,
+    company: "BOHO PROM",
     info:
       "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
     inCart: false,
@@ -75,10 +75,10 @@ export const storeProducts = [
   },
   {
     id: 7,
-    title: "Small-Black",
+    title: "Bealbaby- Ash",
     img: "img/product7.jpg",
     price: 25.45,
-    company: "ZARDI",
+    company: "BEALBABY",
     info:
       "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
     inCart: false,

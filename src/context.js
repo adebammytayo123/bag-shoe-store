@@ -86,11 +86,6 @@ const ProductProvider = (props) => {
       );
   };
 
-  const clearCart = () => {
-    setCart(
-      []
-    );
-  }
 
 
   let subTotal = cart.reduce((acc, amount) => acc + amount.total,0);
@@ -104,12 +99,11 @@ const ProductProvider = (props) => {
         value2: [details, setDetails],
         value3: [handleDetail],
         value4: [addToCart],
-        value7: [subTotal],
-        value8: [increment],
-        value9: [decrement],
-        value10: [removeItem],
-        value11: [clearCart],
-        value12: [cart, setCart]
+        value5: [subTotal],
+        value6: [increment],
+        value7: [decrement],
+        value8: [removeItem],
+        value9: [cart, setCart]
       }
     } >
       {props.children}
