@@ -54,7 +54,9 @@ const ProductProvider = (props) => {
     item.total = item.count * item.price;
 
 
-    setCart([...tempCart])
+    setCart(
+      tempCart, item
+    )
   };
   const decrement = (id) => { 
     let tempCart = [...cart];
@@ -69,7 +71,9 @@ const ProductProvider = (props) => {
     else {
       item.total = item.count * item.price;
     }
-    setCart([...tempCart])
+    setCart(
+      tempCart, item
+    )
   };
 
   const removeItem = (id) => {
