@@ -9,7 +9,7 @@ const NavBar = () =>  {
             <Link className="nav-link" to="/">home</Link>
             <ul className="navbar-nav align-items-center">
             <li className="nav-item ml-5">
-                    <Link to="/products" className="nav-link">Store</Link>
+                    <Link to="/store" className="nav-link">Store</Link>
                 </li>
             </ul>
             <Link to="/cart" className="ml-auto">

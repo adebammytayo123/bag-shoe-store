@@ -20,11 +20,11 @@ const ProductList = () => {
             <ProductListWrapper className="py-5">
                 <div className="container">
                 <Title name="our" title="products" />
-                <div className="btns d-flex justify-content-between my-5">
+                <div className="btns col-12 d-block d-lg-flex  text-center my-5">
                             {btns.map((btn, index) => {
                                 return (
                                     <button
-                                        className="filter-btn text-capitalize"
+                                        className="filter-btn text-capitalize mx-auto py-2"
                                         key={index}
                                         value={btn}
                                         onClick={handleBtns}>
@@ -53,19 +53,22 @@ const ProductListWrapper = styled.div`
 .btns {
     width: 100%;
     background: var(--mainBlue);
-    padding: 1rem;
+    padding: 0.5rem;
 }
 .filter-btn {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: var(--mainWhite);
     background: transparent;
     border: none;
     outline: none;
 }
+.filter-btn:hover {
+    color: var(--mainYellow);
+}
 .filter-btn:focus,
 .filter-btn:active,
 .filter-btn.active  {
-    border-bottom: 0.1em solid var(--lightBlue) !important;
+    border-bottom: 0.1em solid var(--mainYellow) !important;
 }
 `
 
