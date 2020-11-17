@@ -18,7 +18,7 @@ const Product = (props) => {
 
 
     return (
-      <ProductWrapper className="col-9 mx-auto col-md-6 col-lg-3 my-3">
+      <ProductWrapper className="col-6 mx-auto col-lg-3 my-3">
         
         <div className="card">
           {
@@ -109,10 +109,10 @@ const ProductWrapper = styled.div`
   border-color: var(--mainBlue);
   color: var(--mainBlue);
   border-radius: 0.3em;
-  margin-left: 0.5rem;
-  padding: 0.3rem 0.5rem;
+  margin-left: 0.1rem;
+  padding: 0.3rem 0.3rem;
   align-self: center; 
-  font-size: 1.2rem;
+  font-size: 1rem;
   transition: all 1s linear;
 }
 .cart-btn:hover {
@@ -124,10 +124,10 @@ const ProductWrapper = styled.div`
   background: transparent;
   border-color: var(--mainBlue);
   border-radius: 0.3em;
-  margin-right: 0.5rem;
-  padding: 0.3rem 0.5rem;
+  margin-right: 0.1rem;
+  padding: 0.3rem 0.3rem;
   align-self: center; 
-  font-size: 1.2rem;
+  font-size: 1rem;
   transition: all 1s linear;
 }
 .detail-btn:hover {
