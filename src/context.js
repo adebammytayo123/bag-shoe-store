@@ -10,6 +10,8 @@ const ProductProvider = (props) => {
   const [products, setProducts] = useState(storeProducts);
   const [details, setDetails] = useState(detailProduct);
   const [cart, setCart] = useState([]);
+  const [productsCopy, setProductsCopy] = useState([]);
+  const [btns, setBtns] = useState(["all products","bags", "shoes"]);
 
 
 
@@ -94,7 +96,23 @@ const ProductProvider = (props) => {
 
   let subTotal = cart.reduce((acc, amount) => acc + amount.total,0);
 
-  console.log('total', subTotal)
+  console.log('total', subTotal);
+
+  const handleBtns = (e) => {
+
+    console.log(e.target.value);
+    let productsCopy;
+
+    if (e.target.value === "all products" ) {
+      productsCopy = products
+    }
+    else {
+      productsCopy = products.filter(item => item.tag === e.target.value)
+    }
+
+    setProductsCopy(productsCopy)
+  }
+
 
   return (
     <ProductContext.Provider value={
@@ -107,7 +125,10 @@ const ProductProvider = (props) => {
         value6: [increment],
         value7: [decrement],
         value8: [removeItem],
-        value9: [cart, setCart]
+        value9: [cart, setCart],
+        value10: [productsCopy],
+        value11: [handleBtns],
+        value12: [btns, setBtns],
       }
     } >
       {props.children}

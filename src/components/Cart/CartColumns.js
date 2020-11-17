@@ -9,13 +9,17 @@ const CartColumn = () => {
                 </div>
                 <div className="col-10 mx-auto col-lg-2">
                     <p className="text-uppercase">name of product</p>
-                </div> <div className="col-10 mx-auto col-lg-2">
+                </div>
+                <div className="col-10 mx-auto col-lg-2">
                     <p className="text-uppercase">price</p>
-                </div> <div className="col-10 mx-auto col-lg-2">
+                </div>
+                <div className="col-10 mx-auto col-lg-2">
                     <p className="text-uppercase">quantity</p>
-                </div> <div className="col-10 mx-auto col-lg-2">
+                </div>
+                <div className="col-10 mx-auto col-lg-2">
                     <p className="text-uppercase">remove</p>
-                </div> <div className="col-10 mx-auto col-lg-2">
+                </div>
+                <div className="col-10 mx-auto col-lg-2">
                     <p className="text-uppercase">total</p>
                 </div>
             </div>

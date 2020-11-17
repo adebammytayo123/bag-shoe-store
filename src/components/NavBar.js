@@ -1,18 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../logo.svg'
 import styled from 'styled-components';
 import { ButtonContainer } from './Button';
 
 const NavBar = () =>  {
     return (
         < NavWrapper className="navbar navbar-expand-sm navbar-dark px-sm-5">
-            <Link to="/">
-                <img src={logo} alt="product" className="navbar-brand"/>
-            </Link>
+            <Link className="nav-link" to="/">home</Link>
             <ul className="navbar-nav align-items-center">
-                <li className="nav-item ml-5">
-                    <Link to="/" className="nav-link">Products</Link>
+            <li className="nav-item ml-5">
+                    <Link to="/products" className="nav-link">Products</Link>
                 </li>
             </ul>
             <Link to="/cart" className="ml-auto">
@@ -38,7 +35,9 @@ background: var(--mainBlue);
 .nav-link:hover {
     color: var(--mainYellow) !important;
 }
-.nav-link::active {
+.nav-link:focus,
+.nav-link:active,
+.nav-link.active {
     color: var(--mainYellow) !important;
 }
 `

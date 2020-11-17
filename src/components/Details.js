@@ -41,17 +41,17 @@ const Details = () => {
                         </p>
                         <p className="text-muted lead">{details.info}</p>
                         <div>
-                            <Link to="/">
+                            <Link to="/products">
                                 <ButtonContainer>back to products</ButtonContainer>
                             </Link>
                             <ButtonContainer
                                 cart
-                                disabled={details.inCart ? false : true}
+                                disabled={details.inCart ? true : false}
                                 onClick={() => {
-                                    addToCart(details.id);
+                                    addToCart(details.id)
                                 }}
                             >
-                                {details.inCart ? "inCart": "add to cart"}
+                                {details.inCart ? "inCart" : "add to cart"}
                             </ButtonContainer>
                         </div>
                     </div>

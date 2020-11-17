@@ -1,6 +1,7 @@
 import React,{ useContext} from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+// import FilterProduct from './FilterProduct';
 import PropTypes from 'prop-types';
 import { ProductContext } from '../context';
 
@@ -17,7 +18,8 @@ const Product = (props) => {
 
 
     return (
-        <ProductWrapper className="col-9 mx-auto col-md-6 col-lg-3 my-3">
+      <ProductWrapper className="col-9 mx-auto col-md-6 col-lg-3 my-3">
+        
         <div className="card">
           {
             <div
@@ -28,19 +30,6 @@ const Product = (props) => {
             <Link to="/details">
               <img src={img} alt="product" className="card-img-top" />
             </Link>
-              <Link to="/cart">
-              <button
-                className="cart-btn"
-                disabled={inCart ? true : false}
-                onClick={() => {
-                  addToCart(id);
-                }
-                 
-              }
-            >
-              {inCart ? (<p className="text-capitalize mb-0" disabled>in cart</p>) : <i className="fas fa-cart-plus" />}
-            </button>
-           </Link>
           </div>
         }
           <div className="card-footer d-flex justify-content-between">
@@ -50,14 +39,26 @@ const Product = (props) => {
               {price}
             </h5>
           </div>
-          <div
-            className="mx-auto text-center py-3"
-            onClick={() => {
-            handleDetail(id)
-          }}>
+          <div className="d-flex justify-content-center py-5">
           <Link to="/details">
-            <button className="detail-btn text-blue text-capitalize ">details</button>
+                <button
+                  className="detail-btn text-blue text-capitalize"
+                  onClick={() => {
+                    handleDetail(id)
+                  }}
+                >details</button>
           </Link>
+          <button
+                className="cart-btn"
+                disabled={inCart ? true : false}
+                onClick={() => {
+                  addToCart(id);
+                }
+                 
+              }
+            >
+              {inCart ? (<p className="text-capitalize mb-0" disabled>in cart</p>) : <p className="text-capitalize mb-0" disabled>add to cart</p>}
+            </button>
           </div>
           </div>
         </ProductWrapper>
@@ -104,29 +105,26 @@ const ProductWrapper = styled.div`
   transform: scale(1.2)
 }
 .cart-btn {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  padding: 0.2rem 0.4rem;
-  background: var(--lightBlue);
-  color: var(--mainWhite);
-  border: none;
-  border-radius: 0.5rem 0 0 0;
-  font-size: 1.4rem;
-  transform: translate(100%, 100%);
+  background: transparent;
+  border-color: var(--mainBlue);
+  color: var(--mainBlue);
+  border-radius: 0.3em;
+  margin-left: 0.5rem;
+  padding: 0.3rem 0.5rem;
+  align-self: center; 
+  font-size: 1.2rem;
   transition: all 1s linear;
 }
-.img-container:hover .cart-btn {
-  transform: translate(0,0)
-}
 .cart-btn:hover {
-  color: var(--mainBlue);
+  background: var(--mainBlue);
+  color: var(--mainWhite);
   cursor: pointer;
 }
 .detail-btn {
   background: transparent;
   border-color: var(--mainBlue);
   border-radius: 0.3em;
+  margin-right: 0.5rem;
   padding: 0.3rem 0.5rem;
   align-self: center; 
   font-size: 1.2rem;
