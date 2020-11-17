@@ -32,14 +32,15 @@ const Product = (props) => {
             </Link>
           </div>
         }
-          <div className="card-footer d-flex justify-content-between">
+          <div className="card-footer d-block d-lg-flex text-center justify-content-between">
             <p className="align-self-center mb-0">{title}</p>
-            <h5 className="text-blue font-italic mb-0">
-              <span className="mr-1">$</span>
+            <h5 className="text-blue d-flex justify-content-center font-italic my-3 text-center mx-auto">
+              <span className="d-flex d-lg-none">Price: $</span>
+              <span className="mr-1 d-none d-lg-block"> $</span>
               {price}
             </h5>
           </div>
-          <div className="d-flex justify-content-center py-5">
+          <div className="d-flex justify-content-center py-3">
           <Link to="/details">
                 <button
                   className="detail-btn text-blue text-capitalize"

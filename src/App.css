@@ -38,3 +38,9 @@ body {
   font-size: 1.2rem;
   color: var(--mainYellow );
 }
+@media screen and(max-width:768px) {
+  .card-footer {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}

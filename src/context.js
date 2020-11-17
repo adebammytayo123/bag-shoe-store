@@ -11,7 +11,7 @@ const ProductProvider = (props) => {
   const [details, setDetails] = useState(detailProduct);
   const [cart, setCart] = useState([]);
   const [productsCopy, setProductsCopy] = useState([]);
-  const [btns, setBtns] = useState(["all products","bags", "shoes"]);
+  const [btns, setBtns] = useState(["all products","bracelets","clutches","earrings","necklaces","sets","shoes",]);
 
 
 
