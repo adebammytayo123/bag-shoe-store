@@ -39,6 +39,7 @@ background: var(--mainBlue);
 .nav-link:active,
 .nav-link.active {
     color: var(--mainYellow) !important;
+    border-bottom: 0.1em solid var(--mainYellow) !important;
 }
 `
 

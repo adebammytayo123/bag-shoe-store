@@ -16,7 +16,7 @@ export const storeProducts = [
   },
   {
     id: 2,
-    title: "Bling-Silver",
+    title: "Bling Silver-Shoe",
     img: "img/product2.jpg",
     price: 100.50,
     company: "RHINOSTONE",
@@ -29,7 +29,7 @@ export const storeProducts = [
   },
   {
     id: 3,
-    title: "Pendant",
+    title: "Pendant-Necklace",
     img: "img/product9.jpg",
     price: 76.99,
     company: "vera wang kindred heart pendant",
@@ -42,7 +42,7 @@ export const storeProducts = [
   },
   {
     id: 4,
-    title: "Bridal-Crystal",
+    title: "Bridal-Crystal-shoe",
     img: "img/product4.jpg",
     price: 67.07,
     company:"DHGATE.COM",
@@ -55,7 +55,7 @@ export const storeProducts = [
   },
   {
     id: 5,
-    title: "Drop Pearl",
+    title: "Drop Pearl-Set",
     img: "img/product10.jpg",
     price: 3.54,
     company: "DHGATE",
@@ -64,11 +64,11 @@ export const storeProducts = [
     inCart: false,
     count: 0,
     total: 0,
-    tag: "sets"
+    tag: "set"
   },
   {
     id: 6,
-    title: "Peacock",
+    title: "Peacock-Clutch",
     img: "img/product5.jpg",
     price: 50.00,
     company: "ALIEXPRESS",
@@ -81,7 +81,7 @@ export const storeProducts = [
   },
   {
     id: 7,
-    title: "Rhinostone",
+    title: "Circle-Earrings",
     img: "img/product12.jpg",
     price: 23.37,
     company: "JEWELSBYHOUSEOFARIA",
@@ -94,7 +94,7 @@ export const storeProducts = [
   },
   {
     id: 8,
-    title: "Bridal Set",
+    title: "Bridal Set-Set",
     img: "img/product11.jpg",
     price: 28.00,
     company: "BRIDAL PROM JEWELRY",
@@ -103,11 +103,11 @@ export const storeProducts = [
     inCart: false,
     count: 0,
     total: 0, 
-    tag: "sets"
+    tag: "set"
   },
   {
     id: 9,
-    title: "Bridal-White",
+    title: "Bridal-White-Shoe",
     img: "img/product6.jpg",
     price: 90.20,
     company: "ZEPATOE DE NOVA",
@@ -120,7 +120,7 @@ export const storeProducts = [
   },
   {
     id: 10,
-    title: "Bracelet",
+    title: "Gold-Bracelet",
     img: "img/product13.jpg",
     price: 13.95,
     company: "GIFTURLOVE",
@@ -146,7 +146,7 @@ export const storeProducts = [
   },
   {
     id: 12,
-    title: "Pink",
+    title: "Pink-Bracelet",
     img: "img/product14.jpg",
     price: 10.97,
     company: "KEN BRACELET",
@@ -159,7 +159,7 @@ export const storeProducts = [
   },
   {
     id: 13,
-    title: "Stiletto",
+    title: "Stiletto-Shoe",
     img: "img/product8.jpg",
     price: 104.94,
     company: "ERICDRESS",
@@ -185,7 +185,7 @@ export const storeProducts = [
   },
   {
     id: 15,
-    title: "Mermaid",
+    title: "Mermaid-Necklace",
     img: "img/product15.jpg",
     price: 2.34,
     company: "OBEAR OFFCIAL STORE",
@@ -198,7 +198,7 @@ export const storeProducts = [
   },
   {
     id: 16,
-    title: "Stud",
+    title: "Stud-Earrings",
     img: "img/product16.jpg",
     price: 5.66,
     company: "KHANNA JEWELERIES",
@@ -211,7 +211,7 @@ export const storeProducts = [
   },
   {
     id: 17,
-    title: "Round",
+    title: "Round-Earrings",
     img: "img/product17.jpg",
     price: 3.22,
     company: "DHGATE.COM",
@@ -224,7 +224,7 @@ export const storeProducts = [
   },
   {
     id: 18,
-    title: "Dangle",
+    title: "Dangle-Earrings",
     img: "img/product18.jpg",
     price: 1600,
     company: "JOSEPH JEWERIES",
@@ -237,7 +237,7 @@ export const storeProducts = [
   },
   {
     id: 19,
-    title: "Limit",
+    title: "Limit-Earrings",
     img: "img/product19.jpg",
     price: 7.00,
     company: "JEWELDAZE ONLINE",
@@ -250,7 +250,7 @@ export const storeProducts = [
   },
   {
     id:20,
-    title: "Lotus",
+    title: "Lotus-Earrings",
     img: "img/product20.jpg",
     price: 12.00,
     company: "CRAFTVILLA",
@@ -264,15 +264,16 @@ export const storeProducts = [
 ];
 
 export const detailProduct = {
+  
   id: 1,
-    title: "Bealbaby- Purple",
-    img: "img/product1.jpg",
-    price: 24.38,
-    company: "THE WOMEN'S HANDBAGS",
-    info:
-      "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
-    inCart: false,
-    count: 0,
+  title: "Gold-Clutch",
+  img: "img/product1.jpg",
+  price: 24.38,
+  company: "LANDINGFACTS.COM",
+  info:
+    "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
+  inCart: false,
+  count: 0,
   total: 0,
-    tag: "bags"
+  tag: "clutches"
 };

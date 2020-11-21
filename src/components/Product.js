@@ -1,7 +1,6 @@
-import React,{ useContext} from 'react';
-import styled from 'styled-components';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-// import FilterProduct from './FilterProduct';
+import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import { ProductContext } from '../context';
 
@@ -27,9 +26,7 @@ const Product = (props) => {
               onClick={() =>
                 handleDetail(id)
             }>
-            <Link to="/details">
-              <img src={img} alt="product" className="card-img-top" />
-            </Link>
+            <img src={img} alt="product" className="card-img-top" />
           </div>
         }
           <div className="card-footer d-block d-lg-flex text-center justify-content-between">
@@ -42,12 +39,13 @@ const Product = (props) => {
           </div>
           <div className="d-flex justify-content-center py-3">
           <Link to="/details">
-                <button
+          <button
                   className="detail-btn text-blue text-capitalize"
                   onClick={() => {
                     handleDetail(id)
                   }}
-                >details</button>
+                >details
+                </button>
           </Link>
           <button
                 className="cart-btn"
