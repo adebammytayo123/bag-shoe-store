@@ -6,7 +6,7 @@ import { ButtonContainer } from './Button';
 const NavBar = () =>  {
     return (
         < NavWrapper className="navbar navbar-expand-sm navbar-dark px-sm-5">
-            <Link className="nav-link" to="/">home</Link>
+            <Link className="nav-link" to="/store">home</Link>
             <ul className="navbar-nav align-items-center">
             <li className="nav-item ml-5">
                     <Link to="/store" className="nav-link">Store</Link>
