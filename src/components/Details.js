@@ -41,7 +41,7 @@ const Details = () => {
                         </p>
                         <p className="text-muted lead">{details.info}</p>
                         <div>
-                            <Link to="/store">
+                            <Link to="/">
                                 <ButtonContainer>back to products</ButtonContainer>
                             </Link>
                             <ButtonContainer
