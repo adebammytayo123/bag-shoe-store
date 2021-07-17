@@ -105,7 +105,7 @@ const ProductWrapper = styled.div`
 }
 .cart-btn {
   background: transparent;
-  border-color: var(--mainBlue);
+  border: none;
   color: var(--mainBlue);
   border-radius: 0.3em;
   margin-left: 0.1rem;
@@ -121,7 +121,7 @@ const ProductWrapper = styled.div`
 }
 .detail-btn {
   background: transparent;
-  border-color: var(--mainBlue);
+  border: none;
   border-radius: 0.3em;
   margin-right: 0.1rem;
   padding: 0.3rem 0.3rem;

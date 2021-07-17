@@ -19,7 +19,6 @@ const CartColumn = () => {
                 <div className="col-10 mx-auto col-lg-2">
                     <p className="text-uppercase">remove</p>
                 </div>
-                .cont
                 <div className="col-10 mx-auto col-lg-2">
                     <p className="text-uppercase">total</p>
                 </div>

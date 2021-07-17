@@ -10,7 +10,6 @@ const ProductProvider = (props) => {
   const [products, setProducts] = useState(storeProducts);
   const [details, setDetails] = useState(detailProduct);
   const [cart, setCart] = useState([]);
-  // const [productsCopy, setProductsCopy] = useState([]);
   const [btns, setBtns] = useState(["all products","bracelets","clutches","earrings","necklaces","set","shoes",]);
 
 
@@ -46,7 +45,6 @@ const ProductProvider = (props) => {
   };
   // console.log(cart)
 
-
   const increment = (id) => {
     let tempCart = [...cart];
     const selectedItem = tempCart.find(item => item.id === id);
@@ -60,6 +58,7 @@ const ProductProvider = (props) => {
       tempCart, item
     )
   };
+
   const decrement = (id) => { 
     let tempCart = [...cart];
     const selectedItem = tempCart.find(item => item.id === id);
@@ -67,7 +66,7 @@ const ProductProvider = (props) => {
     const item = tempCart[index];
     item.count = item.count - 1;
 
-    if (item.count === 0) {
+    if (item.count < 0) {
       removeItem(id)
     }
     else {
@@ -97,24 +96,6 @@ const ProductProvider = (props) => {
   let subTotal = cart.reduce((acc, amount) => acc + amount.total,0);
 
   console.log('total', subTotal);
-
-  // const handleBtns = (e) => {
-
-  //   console.log(e.target.value);
-  //   let productsCopy;
-
-  //   if (e.target.value === "all products"  ) {
-  //     productsCopy = products
-  //   }
-  //   else {
-  //     productsCopy = products.filter(item => item.tag === e.target.value)
-  //   }
-
-   
-  //   setProductsCopy(productsCopy)
-  // }
-
-  
 
   return (
     <ProductContext.Provider value={
